@@ -49,29 +49,29 @@
                             </td>
                         </tr>
                         <?php
-         }//foreach
-         ?>
-     </table>
+                    }
+                    ?>
+                </table>
 
 
-     <div class="table-responsive">
-        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-            <thead>
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
 
-            </thead>
-            <a href="controller/DeleteUser.php?>" class="btn btn-danger">
-                <i class="far fa-trash-alt"></i>
-            </a>
-        </table>
-    </div>
-</div>
-</div>
-<?php
-}else{
-    ?>
-    <h4></i>No hay registros en la Base de datos MongoDB</h4>
-    <?php 
-} ?>
+                        </thead>
+                        <a href="controller/DeleteUser.php?>" class="btn btn-danger">
+                            <i class="far fa-trash-alt"></i>
+                        </a>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <?php
+    }else{
+        ?>
+        <h4></i>No hay registros en la Base de datos MongoDB</h4>
+        <?php 
+    } ?>
 
 </p>
 </body>
