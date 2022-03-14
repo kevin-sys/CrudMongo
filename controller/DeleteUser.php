@@ -2,12 +2,15 @@
 
 require_once __DIR__ . '../../vendor/autoload.php';
 
-$collection = (new MongoDB\Client)->mydb->users;
-$collection->drop();
+if(isset($_GET['username'])) {
 
-$deleteResult = $collection->deleteMany(['state' => 'ny']);
+$username = $_GET['username'];
+
+$collection = (new MongoDB\Client)->mydb->users;
+$deleteResult = $collection->deleteMany(['username' => $username]);
 
 printf("Deleted %d document(s)\n", $deleteResult->getDeletedCount());
 
 header("Location:../index.php");
+}
 ?>

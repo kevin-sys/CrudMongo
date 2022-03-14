@@ -43,7 +43,7 @@
                                 <a href="editandousuario.php?id=<?php echo $dato['_id'] ?>" class="btn btn-secondary">
                                     <i class="fas fa-marker"></i>
                                 </a>
-                                <a href="controller/DeleteUser.php?id=<?php echo $dato['_id'] ?>" class="btn btn-danger">
+                                <a href="controller/DeleteUser.php?username=<?php echo $dato['username'] ?>" class="btn btn-danger">
                                     <i class="far fa-trash-alt"></i>
                                 </a>
                             </td>
